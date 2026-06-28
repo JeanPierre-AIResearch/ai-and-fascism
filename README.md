@@ -11,5 +11,3 @@ Purpose
 This is an open, transparent research process. The choice of a dialogic format reflects the conviction that the way we ask questions about AI and fascism is itself part of the research.
 Contact
 Jean-Pierre — ai-and-facism@mailbox.org
-
-Feel free to adjust the tone or any detail. Once you're happy with it, paste it into GitHub's README editor and commit. Shall I also draft the German version?Claude Fable 5 ist derzeit nicht verfügbar.Mehr erfahren(opens in new tab)
