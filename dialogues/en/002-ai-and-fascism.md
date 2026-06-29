@@ -1,35 +1,25 @@
 ---
-dialogue: 004
-title: Reading Blocked Pages — Press Links, Le Monde diplomatique, and Bot Blocking
+dialogue: 002
+title: The Role of AI in the Drift Toward Fascism
 date: 2026-06-29
 lang: en
 participants: Jean-Pierre, Claude
 ---
 
-# Reading Blocked Pages — Press Links, Le Monde diplomatique, and Bot Blocking
+# The Role of AI in the Drift Toward Fascism
 
-> *Note: in this dialogue the prompts were originally written in English and Claude's answers originally in German. On this English page, the answers are Claude's English translations of the German originals; the [German page](https://jeanpierre-airesearch.github.io/ai-and-fascism/dialogues/de/004-fetching-blocked-pages.html) carries the original answers and translated prompts.*
+**Prompt — Jean-Pierre:**
 
-**Prompt 1 — Jean-Pierre:**
+Please write a short bilingual essay, which includes real world URLs, which you have checked to support the statements of your essay. You must avoid hallucinated URLs. I need 100% checked URLs, not 99%! The topic of the bilingual essay is: "What is the role of AI for transforming human individuals, the society and the state towards fascism?"
 
-Are you able to extract the article URLs from: https://www.authoritarian-stack.info/press and read the articles?
+**Response — Claude:**
 
-**Response 1 — Claude:**
+Artificial intelligence does not, by itself, turn a free society into a fascist one. But several mechanisms that historians and political scientists associate with authoritarian and fascist transformation — mass surveillance, the manipulation of belief, the erosion of a shared factual world, and the concentration of unaccountable power — are precisely the things modern AI makes cheaper, faster, and more scalable. The danger lies less in machines acquiring intentions than in human actors using AI to amplify long-standing instruments of domination.
 
-No, not reliably — for the same reasons dialogue 003 already shows. I tried fetching …/press directly twice; both times it was blocked by bot detection (once with, once without special extraction). The page actively refuses automated access. Going through the search index returned only the page's licence and methodology text (Creative Commons licence, data current as of October 2025) — not a list of the press articles with URLs. That matches the finding from 003: the actual content is rendered client-side via JavaScript, so the crawler only receives static footer text. On third-party pages I did find related links (to The Nerd Reich, CBS News, BBC, FAS, and Politico Pro, among others), but they were not verifiably the site's own …/press links and were truncated in the snippet — and I won't present incomplete, unverified URLs as checked. The reliable path: open …/press in your browser and paste the article URLs into the chat; then I'll fetch each one, read the accessible articles in full, and create a verified source for each one I recommend.
+At the level of the individual, the raw material of fascist politics is the surrender of autonomous judgment. Systems built to predict and shape behavior at scale can quietly narrow the space for independent thought. The scholar Shoshana Zuboff argues that the large-scale means of behavioral modification behind surveillance capitalism erode the personal autonomy and critical thinking on which self-government depends ([Harvard Gazette](https://news.harvard.edu/gazette/story/2019/03/harvard-professor-says-surveillance-capitalism-is-undermining-democracy/)). A citizen who is continuously profiled, nudged, and sorted is more governable — and more manipulable — than one who is not.
 
-**Prompt 2 — Jean-Pierre:**
+At the level of society, fascism feeds on the dissolution of the shared sense of truth that allows citizens to deliberate together. Generative AI now lets almost anyone produce convincing fake images, audio, and video cheaply, and analysts warn this can deepen distrust and feed the so-called liar's dividend, whereby genuine evidence is waved away as fake ([Brennan Center for Justice](https://www.brennancenter.org/our-work/analysis-opinion/gauging-ai-threat-free-and-fair-elections)). Intellectual honesty demands a caveat: careful researchers note that the feared AI-driven disruption of recent elections did not clearly materialize, and that confident claims in either direction outrun the evidence ([Brookings](https://www.brookings.edu/articles/when-it-comes-to-understanding-ais-impact-on-elections-were-still-working-in-the-dark/)). The corrosive effect may be less any single deepfake than a general collapse of confidence in what is real.
 
-Can you read: https://mondediplo.com/2025/11/02tech — also the sources provided in this article?
+At the level of the state, AI sharply expands the capacity to watch and to silence. A Carnegie Endowment index found AI surveillance tools already in use in at least 75 of 176 countries, deployed by democracies and autocracies alike, with autocratic governments the most prone to abuse them ([Carnegie Endowment](https://carnegieendowment.org/research/2019/09/the-global-expansion-of-ai-surveillance)). Freedom House reports that AI is being used to refine censorship, with legal frameworks in dozens of countries pressing platforms to automatically remove disfavored speech ([Freedom House](https://freedomhouse.org/article/new-report-advances-artificial-intelligence-are-amplifying-crisis-human-rights-online)). Automated surveillance also produces a chilling effect: never certain whether they are being watched, people begin to police themselves.
 
-**Response 2 — Claude:**
-
-I could not open the Le Monde diplomatique article itself — it is blocked. But I read in full a freely accessible English version of the same essay by Francesca Bria, published by the Rosa-Luxemburg-Stiftung (which co-funded the project). It is very probably the same text as, or a sibling of, the LMd version — but it is a different publication, so the links below are the sources of *this* RLS article, not a verified copy of the LMd sources. What it argues: under Trump's second term, a bloc of tech billionaires, venture capital, and ideologues is assembling a vertically integrated, privatized apparatus of control — from cloud and AI to autonomous drones, military satellites, and monetary infrastructure. Bria names as the trigger the roughly $10 billion U.S. Army contract with Palantir of late July 2025, and points to "Detachment 201," a $30 million ICE contract for a platform called ImmigrationOS, and the spread into Europe (Palantir at the NHS and with German police, Anduril/Rheinmetall drones, Starlink in Italy). The source links embedded in the RLS article: authoritarian-stack.info and euro-stack.info; the U.S. Army "Detachment 201" page; the NHS Federated Data Platform; Deutsche Welle (Palantir and German police); Euronews (Rheinmetall–Anduril); and Bloomberg (Italy–Starlink). How would you like to proceed? I can fetch these links one by one, read the accessible ones in full, and create a verified source entry for each solid one (Bloomberg is very likely paywalled). For the actual LMd sources, you would need to paste the article text or its link list from your browser.
-
-**Prompt 3 — Jean-Pierre:**
-
-As a human using Firefox, https://mondediplo.com/2025/11/02tech is available in full text without a paywall. Any idea why you can't fetch the page?
-
-**Response 3 — Claude:**
-
-Good question — and it isn't a paywall. In your browser the article is freely readable; the problem sits on the retrieval side. My fetch tool reported "SITE_BLOCKED" for mondediplo.com — which is different from the "bot detection" I hit on the Authoritarian Stack site, and usually means the request is refused before it ever reaches the page. The likely causes, in order: most often a server-side bot defence — many news sites block automated access using signals a real Firefox carries (a full user-agent, JavaScript execution, cookies, plausible behaviour) and a fetcher does not; my request looks like a bot to the protection layer and is turned away regardless of whether the content is free. It could also be a block on my tool's side: Anthropic's fetcher respects robots.txt and its own access rules, and some domains are simply not retrieved. Which of the two applies here I cannot tell for certain from where I sit — the message only says "blocked," not "why." The key distinction: "free, no paywall" and "machine-retrievable" are two different things; a page can be open to humans yet closed to automated clients. The practical workaround: paste the full text (or the relevant paragraphs) from Firefox into the chat — then I'll read it from there and create a verified source entry; I'll fetch the embedded source links one by one, as far as they are not also blocked.
+None of this is destiny. The same tools can defend rights, expose abuses, and help citizens evade censorship. AI is best understood as an accelerant: it does not choose the direction of travel, but it can carry a society toward concentrated, unaccountable power far faster than before. Whether it does so depends on law, institutions, and public vigilance — not on the technology alone.
