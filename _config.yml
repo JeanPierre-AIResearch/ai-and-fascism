@@ -1,0 +1,12 @@
+title: AI and Fascism
+description: A Public Dialogic Research Project — dialogues between Jean-Pierre and Claude, published in full in English and German.
+theme: jekyll-theme-minimal
+
+# Apply the theme's page layout to every page (index and all dialogues),
+# so each renders with consistent formatting without needing a layout line
+# in its own front matter.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
