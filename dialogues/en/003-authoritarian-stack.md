@@ -1,0 +1,23 @@
+---
+dialogue: 003
+title: Reading "The Authoritarian Stack" — View, Machine-Readability, and Sources
+date: 2026-06-29
+lang: en
+participants: Jean-Pierre, Claude
+---
+
+# Reading "The Authoritarian Stack" — View, Machine-Readability, and Sources
+
+**Prompt — Jean-Pierre:**
+
+Which view on AI and fascism is provided by the website https://www.authoritarian-stack.info/ ? Is this website well machine readable or strongly focussed on human users only? Does the website provide linkable sources additionally to the main URL? Which press articles linked from the website do you recommend to read, after you have read the full article and created a source for the recommended article?
+
+**Response — Claude:**
+
+**The view it offers.** "The Authoritarian Stack" is an investigative web project led by Prof. Francesca Bria (with xof-research.org, data analysis by the Autonomy Institute, supported by the Rosa Luxemburg Stiftung and funded by the Friedrich-Ebert-Stiftung). Its thesis is structural rather than science-fictional: a tech-right bloc of Silicon Valley billionaires and their companies — Thiel, Musk, Andreessen, and figures like J.D. Vance — is assembling a privatized "infrastructure of control" across five domains it calls data, defense, space, energy, and money. In this reading, AI is not an autonomous agent that "becomes" fascist; it is one layer of an integrated stack (Palantir's data-and-decision platforms, xAI's military AI, cloud, finance, drones, satellites) through which a small, ideological elite acquires state-like power, while "democracy persists as a legacy interface" that is hollowed out from within. The danger is framed as post-democratic and oligarchic — a privatization of sovereignty — and the project warns this model is being exported to Europe. So its answer to "the role of AI in fascism" is infrastructural and elite-driven: AI concentrates unaccountable power in private hands, rather than machines developing intentions of their own.
+
+**Machine-readability.** The site is strongly oriented toward human users. When I fetched the page, the served HTML contained essentially only meta and OpenGraph tags (title, description, preview image) — the substantive content was not in the static markup. That is the signature of a client-side, JavaScript-rendered application whose argument is presented as interactive infographics and maps. The consequence: it is rich for a human viewer but poor for machines. Its social-preview metadata is machine-readable (clean link previews), and the project describes itself as an "open source data platform," so structured data may exist behind the scenes — but the public page's actual content is not readily extractable by a crawler or a non-JavaScript fetcher.
+
+**Linkable sources beyond the main URL.** The evidence points to yes — the content refers to discrete, citation-like items (for example a section labelled "Detachment 201: The Army's Executive Innovation Corps") and draws on press reporting, which implies embedded source links. But because the page is rendered client-side, I could not machine-extract a verified list of those outbound URLs from the site itself. So I can say it appears to cite sources, while being honest that I cannot enumerate them with certainty from my own retrieval. To pin down the exact links, the site's own "sources" would need to be opened in a browser and the URLs pasted here.
+
+**A recommended press article (with the same honesty about linkage).** Because I could not verify the site's exact hyperlinks, I will not guess which articles it embeds. Instead I recommend authoritative reporting on the site's opening, central case: the U.S. Army's enterprise agreement consolidating 75 contracts into a single deal worth up to $10 billion with Palantir. I read Axios's account — Colin Demarest, "Palantir's $10 billion Army contract continues its D.C. win streak" (5 August 2025) — and recommend it because it is concise, sourced, and neutral: it explains the Army's stated efficiency rationale, situates the deal in Palantir's rising role at the Pentagon, and notes the striking reversal that Palantir had sued the Army in 2016 and is now a core supplier. That neutral grounding lets a reader weigh the site's stronger interpretive claims against the documented facts. A source entry for it is included below. If you paste the site's actual source links, I will read and create verified sources for those specifically.
